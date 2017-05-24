@@ -1,7 +1,7 @@
 package objectClasses;
 
 /**
- * Created by hansagee on 5/15/17.
+ * 
  */
 public class UserGroups {
     private String displayName;
