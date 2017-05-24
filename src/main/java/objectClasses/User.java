@@ -1,7 +1,7 @@
 package objectClasses;
 
 /**
- * Created by hansagee on 5/12/17.
+ * 
  */
 public class User {
     final String userName;
