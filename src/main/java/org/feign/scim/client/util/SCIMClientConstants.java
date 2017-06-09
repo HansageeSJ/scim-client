@@ -1,7 +1,7 @@
-package util;
+package org.feign.scim.client.util;
 
 /**
- *
+ * Created by hansagee on 6/7/17.
  */
 public class SCIMClientConstants {
     public final static String ENDPOINT_URL = "https://localhost:9292";

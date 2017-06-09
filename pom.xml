@@ -3,62 +3,41 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.wso2.SCIMclient</groupId>
-    <artifactId>SCIMclient</artifactId>
+
+    <groupId>org.feign.scim.client</groupId>
+    <artifactId>feign-scim-client</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+
+<dependencies>
+    <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-core-->
+    <dependency>
+        <groupId>com.netflix.feign</groupId>
+        <artifactId>feign-core</artifactId>
+        <version>8.18.0</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-gson -->
+    <dependency>
+        <groupId>com.netflix.feign</groupId>
+        <artifactId>feign-gson</artifactId>
+        <version>8.18.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.wso2.charon</groupId>
+        <artifactId>org.wso2.charon3.core</artifactId>
+        <version>3.0.6-SNAPSHOT</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+    <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.1.1</version>
+    </dependency>
 
 
 
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.squareup.retrofit2/retrofit -->
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>retrofit</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-gson -->
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>converter-gson</artifactId>
-            <version>LATEST</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-core-->
-        <dependency>
-            <groupId>com.netflix.feign</groupId>
-            <artifactId>feign-core</artifactId>
-            <version>8.18.0</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-gson -->
-        <dependency>
-            <groupId>com.netflix.feign</groupId>
-            <artifactId>feign-gson</artifactId>
-            <version>8.18.0</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>org.wso2.charon</groupId>
-            <artifactId>org.wso2.charon3.core</artifactId>
-            <version>3.0.6-SNAPSHOT</version>
-        </dependency>
-
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+</dependencies>
 
 </project>
